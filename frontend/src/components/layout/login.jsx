@@ -29,22 +29,24 @@ function Login() {
   }
 };
 
-  return (
-    <div className='border'>
-      <div>
-        <h2 className='text-red-500 font-extrabold'>SDSU</h2>
-        <h3 className='font-extrabold font-black'>THRIVE</h3>
-      </div>
-      <div>
-        <form action="" onSubmit={handleSubmit}>
-          <input className="border-2" type="text" placeholder='Username' onChange={(e) => setUsername(e.target.value)} />
-          <input className="border-2" type="text" placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
-          <input className="border-2" type="text" placeholder='Password' onChange={(e) => setPassword(e.target.value)} />
-          <button className='border-2' type='submit'>Login</button>
-        </form>
-      </div>
-    </div>
-  )
+return (
+   <div className='h-screen bg-cover flex items-center justify-center' style={{backgroundImage: "url('https://wallpaperswide.com/download/pixel_art-wallpaper-2560x1440.jpg')" }}>
+     <div className=''>
+       <div className="flex-1"></div>
+       <h2 className='text-red-500 font-extrabold font-extrabold text-3xl'>SDSU</h2>
+       <h3 className='font-black text-8xl opacity-80'>THRIVE</h3>
+     </div>
+     <div className="ml-60"></div>
+     <div className='w-80 bg-white bg-opacity-70 rounded-xl p-8 m-10 '>
+       <form action="" onSubmit={handleSubmit}>
+         <input className="border-2 p-1 rounded" type="text" placeholder='Username' onChange={(e) => setUsername(e.target.value)} />
+         <input className="border-2 p-1 rounded" type="text" placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
+         <input className="border-2 p-1 rounded" type="text" placeholder='Password' onChange={(e) => setPassword(e.target.value)} />
+         <button className='border-2 p-1 rounded transition mx-auto' type='submit'>Login</button>
+       </form>
+     </div>
+   </div>
+ )
 }
 
 export default Login
