@@ -43,7 +43,7 @@ return (
          <input className="border-2 p-1 rounded mb-3" type="text" placeholder='Username' onChange={(e) => setUsername(e.target.value)} />
          <input className="border-2 p-1 rounded mb-3" type="text" placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
          <input className="border-2 p-1 rounded mb-3" type="text" placeholder='Password' onChange={(e) => setPassword(e.target.value)} />
-         <button className='border-2 p-1 rounded transition mx-auto flex' type='submit'>Login</button>
+         <button className='border-2 p-1 rounded transition mx-auto flex hover: cursor-pointer' type='submit'>Login</button>
        </form>
      </div>
    </div>
