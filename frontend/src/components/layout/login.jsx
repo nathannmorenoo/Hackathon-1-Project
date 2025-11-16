@@ -9,6 +9,7 @@ function Login() {
   const handleSubmit = async (e) => {
   e.preventDefault();
 
+  // this url is for the backend, not frontend 
   try {
     const response = await fetch("http://localhost:8000/login", {
       method: "POST",
@@ -37,12 +38,12 @@ return (
        <h3 className='font-black text-8xl opacity-80'>THRIVE</h3>
      </div>
      <div className="ml-60"></div>
-     <div className='w-80 bg-white bg-opacity-70 rounded-xl p-8 m-10 '>
-       <form action="" onSubmit={handleSubmit}>
-         <input className="border-2 p-1 rounded" type="text" placeholder='Username' onChange={(e) => setUsername(e.target.value)} />
-         <input className="border-2 p-1 rounded" type="text" placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
-         <input className="border-2 p-1 rounded" type="text" placeholder='Password' onChange={(e) => setPassword(e.target.value)} />
-         <button className='border-2 p-1 rounded transition mx-auto' type='submit'>Login</button>
+     <div className='w-80 bg-white opacity-50 rounded-xl p-8 m-10 '>
+       <form className="" action="" onSubmit={handleSubmit}>
+         <input className="border-2 p-1 rounded mb-3" type="text" placeholder='Username' onChange={(e) => setUsername(e.target.value)} />
+         <input className="border-2 p-1 rounded mb-3" type="text" placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
+         <input className="border-2 p-1 rounded mb-3" type="text" placeholder='Password' onChange={(e) => setPassword(e.target.value)} />
+         <button className='border-2 p-1 rounded transition mx-auto flex' type='submit'>Login</button>
        </form>
      </div>
    </div>
